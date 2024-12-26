@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+    @apply bg-sky-800;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    @apply px-4 lg:px-0;
+}
+
+.main-nav {
+    @apply flex space-x-2
+}
+
+.main-nav .main-link {
+    @apply py-4 px-2 text-sky-900 font-semibold
+}
+.main-nav .main-link-active {
+    @apply py-4 px-2 text-sky-900 font-semibold
+}
+
+.main-nav .main-link:hover {
+    @apply bg-sky-300;
+    /* background-color: sky; */
+}
+
+.list-item {
+    @apply border border-sky-300 p-2 rounded hover:bg-sky-200 mb-1
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead tr {
+    @apply bg-sky-400 text-sky-100
+}
+
+.table th,
+.table td {
+    @apply p-2 border border-sky-400
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgb(57, 171, 236);
+}
+
+h1 {
+    @apply text-4xl font-medium
+}
+
+label {
+    @apply text-sky-600 italic text-sm
+}
+
+.field {
+    @apply rounded p-1 border border-sky-300 w-full
+}
+.btn {
+    @apply py-2 rounded px-4 text-white disabled:bg-sky-300
+}
+
+button.primary {
+    @apply bg-sky-400 hover:bg-sky-600
+}
+
+button.secondary {
+    @apply bg-sky-400 hover:bg-sky-600
+}
+
+
